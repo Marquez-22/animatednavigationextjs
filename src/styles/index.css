@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+html {
+  font-size: 16px;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to bottom, #eafbff 0%, #eafbff 50%, #5290f9 50%, #5290f9 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.contentbox .Box {
+  background: white;
+  padding: 1.1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  transition: 1s;
+}
+.contentbox .Box .text {
+  transition: 1s;
+}
+.contentbox .Box.active .IconToggle {
+  display: none;
+}
+.contentbox .Box.inactive {
+  gap: 0;
+}
+.contentbox .Box.inactive .ButtonClose {
+  display: none;
+}
+.contentbox .Box.inactive .text {
+  font-size: 0;
+}
+.contentbox .linkBox {
+  text-decoration: none;
+  color: black;
+}
+
+.Container {
+  width: min(100%, 39.5rem);
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+.text {
+  font-family: "Muli", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.ButtonClose {
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+}
+.ButtonClose svg {
+  width: 1.2rem;
+  fill: #5290f9;
+}
+
+.ButtonClose {
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+}
+.ButtonClose svg {
+  width: 1.2rem;
+  fill: #5290f9;
+}
+
+.IconToggle {
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+}
+.IconToggle svg {
+  width: 1.2rem;
+  fill: #5290f9;
+}
+.IconToggle svg:hover {
+  color: rgb(139, 13, 13);
+}
+
+/*# sourceMappingURL=index.css.map */

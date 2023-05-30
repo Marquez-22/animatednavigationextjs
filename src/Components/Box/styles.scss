@@ -1,0 +1,49 @@
+.contentbox{
+    .Box {
+        background: white;
+        padding: 1.1rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        border-radius: 2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap:1rem;
+        transition: 1s;
+        .text{
+            transition: 1s;
+        }
+        &.active{
+            .IconToggle{
+                display: none;
+            }
+        
+
+        }
+        &.inactive{
+            gap:0;
+
+            .ButtonClose{
+               display: none;
+               
+            }
+            .text{
+                font-size: 0;
+              
+            }
+
+            
+
+        }
+        
+
+
+
+    }
+    .linkBox{
+        text-decoration: none;
+        color: black;
+
+    }
+   
+}
+
